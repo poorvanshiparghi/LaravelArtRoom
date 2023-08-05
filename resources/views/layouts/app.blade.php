@@ -15,13 +15,21 @@
   
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <style>
+        nav{
+            background-color: #211f55;
+        }
+        body{
+            background-color: #44426e;
+        }
+    </style>
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <div id="app">       
+        <nav class="navbar navbar-expand-md shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Step-by-Step Guide to User Role and Permission Tutorial in Laravel 10 - LaravelTuts.com
+                <a class="navbar-brand" style="color: white" href="{{ url('/') }}">
+                    Chitrakar Art Room
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -51,7 +59,7 @@
                         @else
                             <li><a class="nav-link" href="{{ route('users.index') }}">Manage Users</a></li>
                             <li><a class="nav-link" href="{{ route('roles.index') }}">Manage Role</a></li>
-                            <li><a class="nav-link" href="{{ route('products.index') }}">Manage Product</a></li>
+                            <li><a class="nav-link" href="{{ route('products.index') }}">Manage Art Work</a></li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
@@ -73,8 +81,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-  
+        </nav>        
         <main class="py-4">
             <div class="container">
                 <div class="row justify-content-center">
@@ -88,7 +95,6 @@
                 </div>
             </div>
         </main>
-          
     </div>
 </body>
 </html>
