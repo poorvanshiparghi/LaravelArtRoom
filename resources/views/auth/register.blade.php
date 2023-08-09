@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #221f55;
+    background-color: #002c6b;
 }
 .background{
     width: 430px;
@@ -56,7 +56,7 @@ body{
 form{
     height: 700px;
     width: 450px;
-    background-color: rgba(255,255,255,0.13);
+    background-color: #dee3e623;
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
@@ -139,8 +139,8 @@ button{
 </head>
 <body>
     <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
+        {{-- <div class="shape"></div>
+        <div class="shape"></div> --}}
     </div>
     <form method="POST" action="{{ route('register') }}">
         @csrf

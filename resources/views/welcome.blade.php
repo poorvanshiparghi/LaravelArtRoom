@@ -16,18 +16,20 @@
                 margin: 0;
             }
             #bg_video {
-                position: fixed;
-                right: 0;
-                bottom: 0;
-                top: 0;
-                min-width: 100%; 
-                min-height: 100%;   
+                position:absolute; 
+                height: auto;
+                width: 100%;
+
+                top:0;  
+                left:0;  
+                right:0;  
+                bottom:0;  
             }
             .content {
                 position: fixed;
                 top: 70%;
-                bottom: -20%;
-                left: 63%;
+                bottom: -10%;
+                left: 60%;
                 background: none;
                 color: #f1f1f1;
                 width: 50%;
@@ -36,8 +38,8 @@
             .button {
                 display: inline-block;
                 padding: 15px 40px;
-                background-color: #bdd1ee;
-                color: #1d0808;
+                background-color: #038bb9ba;
+                color: #ffffff;
                 text-decoration: none;
                 border-radius: 5px;
                 border: none;
